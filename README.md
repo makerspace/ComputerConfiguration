@@ -8,62 +8,21 @@ New Ubuntu 14.10 installation image for laptops and workstation
 
 We are working on a new installation image that should be used on all general purpose Linux computers in the facility. This image could be written into the HDD from network boot. Instead of trying to keep all computers up-to-date, we will update the image on the server and install it on all computers.
 
-* A Ubuntu 14.10 installation from mini.iso
-* Language: English
-* Disk size: 10 GB
-* apt-get remove resolvconf
-* apt-get install firefox
-* apt-get install okular
-* apt-get install libreoffice
-* apt-get install freecad
-* apt-get install wireshark
-* apt-get install roxterm
-* apt-get install htop
-* apt-get install screen
-* apt-get install cutecom
-* apt-get install inkscape
-* apt-get install gcc-arm-none-eabi gdb-arm-none-eabi openocd
-* apt-get install gimp
-* apt-get install openscad
-* apt-get install kicad
-* apt-get install tcsh
-* apt-get install vlc
-
-Todo:
-* xserver, gpu drivers
-* XFCE
-
-* Cura
-* Sound card oscilloscope + function generator
-* Oscilloscope software?
-* Zebra software
-* Arduino IDE
-* Salae
-* SUMP
-
-* x86 gnu toolchain
-* Wine
-* Octave
-
-
 Content in this repository
 --------------
 * README.md - This file
 * Configuration/
+
 ** sources.list - /etc/apt/sources.list for all computers with Debian testing (jessie)
 * Scripts/
+
 ** hostname.sh DHCP Hostname (/etc/hostname + /etc/hosts)
   
 
 Todo
 --------------
-* Scripts/hostname.sh should be updated so /etc/hosts is updated
-* Roxterm configuration
-* tcsh configuration
-* SSH keys
 * A script for cloning HDD's via network
 * The installation should be done via network
-* Setup scripts, configuration or whatever needed do to an (almost) auto installation via network from mini.iso
 
 Hardware
 --------

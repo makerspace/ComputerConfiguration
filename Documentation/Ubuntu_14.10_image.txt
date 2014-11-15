@@ -1,0 +1,52 @@
+Ubuntu 14.10 minimal installation (from mini.iso)
+Language: English
+Disk size: 10 GB
+
+apt-get remove resolvconf
+
+apt-get install htop
+apt-get install screen
+apt-get install tcsh
+apt-get install tcc
+apt-get install ntp
+apt-get install nmap
+apt-get install php5-cli
+apt-get install gcc-arm-none-eabi gdb-arm-none-eabi openocd
+
+apt-get install xserver-xorg-core
+apt-get install xserver-xorg-input-evdev
+apt-get install xserver-xorg-video-intel
+apt-get install xfce4
+
+apt-get install lightdm-gtk-greeter
+//apt-get install lightdm-webkit-greeter
+apt-get install lightdm
+
+apt-get install firefox
+apt-get install okular
+apt-get install libreoffice
+apt-get install freecad
+apt-get install wireshark
+apt-get install roxterm
+apt-get install cutecom
+apt-get install inkscape
+apt-get install gimp
+apt-get install openscad
+apt-get install kicad
+apt-get install vlc
+
+apt-get install wine
+
+apt-get install arduino
+
+Fileserver:
+	apt-get install cifs-utils
+	mkdir /mnt/public
+	echo "//storage03.local/public /mnt/public cifs guest 0 0" >> /etc/fstab
+
+Config:
+	addgroup makerspace dialout
+	/etc/lightdm/lightdm.conf.d/11-autologin.conf [SeatDefaults] autologin-user=makerspace autologin-user-timeout=0
+	Divere konfiguration till cura
+	Flytta ner taskbar
+	Disable screensaver / screen blanking
